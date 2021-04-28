@@ -11,8 +11,12 @@ body {
 a,
 button {
     transition: all .3s ease-in-out;
-    outline: none!important;
+    /* outline: none!important; */
     text-decoration: none;
+}
+
+button:focus {
+    outline: auto;
 }
 
 a:hover {
@@ -20,8 +24,10 @@ a:hover {
     cursor: pointer;
 }
 
-blockquote {
+blockquote,
+figcaption {
     border-left: none;
+    color:#000000;
 }
 
 .secondary-title {
@@ -348,7 +354,7 @@ blockquote {
 
 .nav > li a:hover,
 .nav > li a:focus {
-    background: transparent;
+    background: #F3976C;
 }
 
 .navbar-toggle {
@@ -467,7 +473,7 @@ nav .caret {
     margin: 0 0 5px 5px;
 }
 
-.btn-d,
+/* .btn-d, */
 .btn-d:hover,
 .btn-d:focus {
     color: #FFF;
@@ -665,7 +671,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #3E3E3E!important;
 }
 
 .container {
@@ -692,6 +698,10 @@ a {
 
 p {
     font-size: 14px;
+}
+
+footer p {
+    font-weight: bold;
 }
 
 .tight-width-whitespace {
