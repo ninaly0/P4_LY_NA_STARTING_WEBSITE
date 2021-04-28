@@ -11,7 +11,7 @@ body {
 a,
 button {
     transition: all .3s ease-in-out;
-    /* outline: none!important; */
+    outline: none!important;
     text-decoration: none;
 }
 
@@ -157,6 +157,7 @@ figcaption {
 .d-bloc .navbar-brand:hover,
 .d-bloc a:hover .icon-sm,
 .d-bloc a:hover .icon-md,
+.d-bloc a:focus .icon-md,
 .d-bloc a:hover .icon-lg,
 .d-bloc a:hover .icon-xl,
 .d-bloc h1 a:hover,
@@ -356,6 +357,10 @@ figcaption {
 .nav > li a:focus {
     background: #F3976C;
 }
+.nav > li > a:focus,
+.nav > li > a:hover {
+    background: #F3976C!important;
+}
 
 .navbar-toggle {
     margin: 10px 10px 0 0;
@@ -475,9 +480,10 @@ nav .caret {
 
 /* .btn-d, */
 .btn-d:hover,
-.btn-d:focus {
+.btn-d:focus,
+footer a:focus {
     color: #FFF;
-    background: rgba(0, 0, 0, .3);
+    background: #d44f11;
 }
 
 button {
@@ -1052,6 +1058,9 @@ h4 {
     .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
+    }
+    .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+        display: inline-block;
     }
 }
 
