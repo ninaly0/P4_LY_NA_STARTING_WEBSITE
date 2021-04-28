@@ -5,6 +5,7 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-size: 14px;
 }
 
 a,
@@ -17,6 +18,14 @@ button {
 a:hover {
     text-decoration: none;
     cursor: pointer;
+}
+
+blockquote {
+    border-left: none;
+}
+
+.secondary-title {
+    font-weight: bold;
 }
 
 #page-loading-blocs-notifaction {
@@ -682,7 +691,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -760,7 +769,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(82, 90, 72, .7);
     padding: 40px 40px 40px 40px;
 }
 
